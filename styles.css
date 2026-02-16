@@ -1,0 +1,131 @@
+/* --- Kadair Eskandar — Simple personal site (yejinc.github.io style) --- */
+:root {
+  --text: #222;
+  --text-muted: #555;
+  --link: #1967d2;
+  --border: #ddd;
+  --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  background: #fff;
+  padding: 0.75rem 1rem 1.25rem;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* --- Profile header --- */
+.profile {
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.profile-text {
+  min-width: 0;
+}
+
+.name {
+  font-family: var(--sans);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.intro {
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: 75ch;
+}
+
+.intro-expanded {
+  margin: 0;
+  max-width: 75ch;
+}
+
+@media (max-width: 480px) {
+  .profile {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* --- Sections --- */
+.section {
+  margin-bottom: 0.9rem;
+  text-align: left;
+}
+
+.section h2 {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+  max-width: none;
+}
+
+.section p {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  max-width: none;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
