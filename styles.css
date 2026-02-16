@@ -19,9 +19,9 @@ body {
 }
 
 main {
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -37,14 +37,13 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 1rem;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
@@ -93,11 +92,10 @@ a:hover { text-decoration: underline; }
 
 .section h2 {
   font-family: var(--sans);
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   margin: 0 0 0.5rem;
   color: var(--text);
-  text-align: center;
 }
 
 .section ul {
@@ -124,7 +122,6 @@ a:hover { text-decoration: underline; }
 footer {
   margin-top: 1rem;
   padding-top: 0.75rem;
-  text-align: center;
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
   color: var(--text-muted);
