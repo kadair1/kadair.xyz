@@ -14,7 +14,7 @@
   ctx.scale(dpr, dpr);
 
   var centerX = W / 2, centerY = H / 2;
-  var bhHomeX = 80, bhY = H / 2;
+  var bhHomeX = 145, bhY = H / 2;
   var solarHomeX = 200, solarHomeY = H / 2;
   var t = 0;
 
@@ -85,7 +85,7 @@
       var solarY = solarHomeY + (bhY - solarHomeY) * pull;
       var curBhX = suckDone ? bhDotX : bhHomeX;
       var curBhY = suckDone ? bhDotY : bhY;
-      var bhR = 12 * bhScale;
+      var bhR = 7 * bhScale;
 
       if (bhScale > 0.15) {
         var distR = bhR * 5;
