@@ -8,6 +8,41 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+.top-nav {
+  position: fixed;
+  top: 12px;
+  right: 50%;
+  transform: translateX(440px);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 9998;
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+#atom {
+  position: fixed;
+  top: 12px;
+  right: 50%;
+  transform: translateX(500px);
+  width: 300px;
+  height: 140px;
+  z-index: 9999;
+  pointer-events: none;
+}
 body {
   margin: 0;
   font-family: var(--sans);
@@ -19,7 +54,7 @@ body {
 }
 
 main {
-  max-width: 720px;
+  max-width: 540px;
   margin: 0 auto;
   text-align: left;
 }
@@ -41,12 +76,77 @@ a:hover { text-decoration: underline; }
   align-items: flex-end;
 }
 
+.photo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .profile-photo {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0;
+}
+
+.icon-row {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.email-reveal {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.twitter-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.twitter-icon {
+  width: 20px;
+  height: 20px;
+  fill: #222;
+}
+
+.twitter-link:hover .twitter-icon {
+  opacity: 0.7;
+}
+
+.email-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #222;
+  user-select: none;
+}
+
+.email-text {
+  display: none;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: #222;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.email-reveal.open .email-text {
+  display: inline-flex;
+}
+
+.copy-btn {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.copy-btn:hover {
+  color: #222;
 }
 
 .profile-text {
@@ -58,6 +158,8 @@ a:hover { text-decoration: underline; }
   font-size: 1.75rem;
   font-weight: 500;
   margin: 0 0 0.25rem;
+  align-self: flex-end;
+  margin-bottom: 2.2rem;
 }
 
 .tagline {
