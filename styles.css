@@ -11,27 +11,32 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 .top-nav {
-  position: fixed;
-  top: 12px;
-  right: 50%;
-  transform: translateX(440px);
+  max-width: 540px;
+  margin: 0 auto 0.7rem;
   display: flex;
-  gap: 0.75rem;
-  z-index: 9998;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10000;
 }
 
 .nav-link {
   color: #555;
   text-decoration: none;
   font-family: var(--sans);
-  font-size: 17px;
-  font-weight: 400;
-  transition: color 0.2s;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  transition: border-color 0.2s, color 0.2s;
 }
 
 .nav-link:hover {
   color: #333;
-  text-decoration: underline;
+  border-color: #aaa;
+  text-decoration: none;
 }
 
 #atom {
@@ -235,17 +240,6 @@ footer {
 }
 
 /* --- Writing --- */
-.writing-section {
-  border-top: 1px solid var(--border);
-  padding-top: 0.75rem;
-}
-
-.writing-section-top {
-  border-top: 0;
-  margin-top: -0.2rem;
-  padding-top: 0;
-}
-
 .post-row,
 .post-card {
   color: var(--text);
