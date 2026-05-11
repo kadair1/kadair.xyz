@@ -7,13 +7,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kadair.xyz/blog/</loc>
+    <loc>https://kadair.xyz/writings/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kadair.xyz/blog/to-live-well-is-to-contribute/</loc>
+    <loc>https://kadair.xyz/writings/to-live-well-is-to-contribute/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
