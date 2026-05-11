@@ -21,22 +21,17 @@
 
 .nav-link {
   color: #555;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   font-family: var(--sans);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
-  padding: 0.45rem 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
-  transition: border-color 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
 .nav-link:hover {
   color: #333;
-  border-color: #aaa;
-  text-decoration: none;
 }
 
 #atom {
