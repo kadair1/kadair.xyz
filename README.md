@@ -6,7 +6,6 @@ A simple, static personal site ready to publish on **GitHub Pages**.
 
 - **index.html** — Main page (hero, about, work, contact)
 - **styles.css** — Layout and styling
-- **script.js** — Footer year, mobile menu
 
 Edit these files to add your name, tagline, bio, projects, and links.
 
