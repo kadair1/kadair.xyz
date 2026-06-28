@@ -51,8 +51,8 @@ a:hover {
 }
 
 .home-photo {
-  width: 86px;
-  height: 86px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin-bottom: 20px;
   display: block;
