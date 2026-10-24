@@ -10,31 +10,6 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-.top-nav {
-  max-width: 540px;
-  margin: 0 auto 0.7rem;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 10000;
-}
-
-.nav-link {
-  color: #222;
-  text-decoration: none;
-  font-family: var(--sans);
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: #000;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 body {
   margin: 0;
   font-family: var(--sans);
@@ -93,21 +68,6 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 0.4rem;
-}
-
-.twitter-link {
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.twitter-icon {
-  width: 20px;
-  height: 20px;
-  fill: #222;
-}
-
-.twitter-link:hover .twitter-icon {
-  opacity: 0.7;
 }
 
 .email-toggle {
